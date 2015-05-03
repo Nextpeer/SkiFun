@@ -18,6 +18,10 @@ import com.nextpeer.libgdx.Tournaments;
  */
 public final class AndroidTournaments extends Tournaments {
 	public AndroidTournaments(Context context) {
+
+		// 1) Change the project's package identifier from "com.nextpeer.demos.skifun" to your own domain (for example "com.mycompany.skifun") in the project's AndroidManifest.xml.
+		// 2) Navigate to https://developers.nextpeer.com and create your Android game.
+		// 4) Paste the Android game key from our dashboard below.
 		final String gameKey = "e8352065980f19bdd3c35d77247a7951";
 		NextpeerSettings settings = new NextpeerSettings();
 
