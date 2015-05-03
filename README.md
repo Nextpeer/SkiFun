@@ -12,7 +12,7 @@ This is a libGDX port of the popular 1991 PC game [SkiFree](http://en.wikipedia.
 2. Import the Java projects to your Eclipse workspace (or alternatively [import the projects](https://developer.android.com/sdk/installing/migrate.html) to Android Studio).
 3. Feel free to contact us on any question. [support@nextpeer.com](mailto:support@nextpeer.com).
 
-## Features so far:
+## Features so far
 
 * Skiing down a never-ending skislope with randomly-generated trees and rocks.
 * Collision detection with obstacles - and the appropriate reaction
@@ -45,6 +45,6 @@ The initial version made by the following CS students:
 
 ## License
 
-See [license](blob/master/LICENSE).
+See [license](https://github.com/Nextpeer/SkiFun/blob/master/LICENSE).
 
 ![image](http://i.imgur.com/HnuKytM.gif)
