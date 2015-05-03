@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="NP__BaseTheme" parent="android:Theme.Light">
+        <!--
+	       Base application theme, dependent on API level. This theme is replaced
+	       by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+        -->
+
+
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="NP__Theme" parent="NP__BaseTheme">
+
+        <!--
+             All customizations that are NOT specific 
+        	 to a particular API-level can go here.
+        -->
+
+        <item name="android:textAppearanceLarge">@style/NP__.TextAppearance.Large</item>
+        <item name="android:textAppearanceMedium">@style/NP__.TextAppearance.Medium</item>
+        <item name="android:textAppearanceSmall">@style/NP__.TextAppearance.Small</item>
+        <item name="android:dropDownListViewStyle">@style/NP__Theme.DropDownBase</item>
+    </style>
+
+    <style name="NP__Theme.DropDownBase" parent="@style/NP__.Widget.DropDown">
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:dividerHeight">0dp</item>
+    </style>
+    
+    <!--
+    	========================================================
+    	Dialogs.
+    	======================================================== 
+    -->
+
+    <style name="NP__Theme.DialogBase" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        <item name="android:windowAnimationStyle">@style/NP__.Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+    
+    <!-- this style will always be empty in this file, but will contain stuff in /res/values-v11/themes.xml -->
+    <style name="NP__Theme.Dialog" parent="NP__Theme.DialogBase" />
+</resources>
