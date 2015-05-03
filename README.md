@@ -45,6 +45,6 @@ The initial version made by the following CS students:
 
 ## License
 
-See [license](blob/master/LICENSE).
+See [license](https://github.com/Nextpeer/SkiFun/blob/master/LICENSE).
 
 ![image](http://i.imgur.com/HnuKytM.gif)
