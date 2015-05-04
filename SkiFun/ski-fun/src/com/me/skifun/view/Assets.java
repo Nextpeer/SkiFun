@@ -232,7 +232,14 @@ public class Assets {
 		highJumpSound= Gdx.audio.newSound(Gdx.files.internal("data/Audio/highjumpSoundEffect.wav"));
 		clickSound= Gdx.audio.newSound(Gdx.files.internal("data/Audio/clickSoundEffect.ogg"));
 		hitSound= Gdx.audio.newSound(Gdx.files.internal("data/Audio/hitSoundEffect.ogg"));
-		music = Gdx.audio.newMusic(Gdx.files.internal("data/Audio/themeMusic.mp3"));
+
+		// Some devices/emulators do not support various mp3. Avoid crashing.
+		try {
+			music = Gdx.audio.newMusic(Gdx.files.internal("data/Audio/themeMusic.mp3"));
+		}
+		catch(Exception e) {
+			music = Gdx.audio.newMusic(Gdx.files.internal("data/Audio/highjumpSoundEffect.wav"));
+		}
 
 		/*
 		 * TUTORIAL
